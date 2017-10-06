@@ -1,7 +1,5 @@
 # The Overview of Modern OpenGL
 
-国内图形学教材过老过旧，导致很多概念前后矛盾，解释不清，所以我在读了国外的一些材料后，写就此文，解释一些OpenGL的现代特性。
-
 OpenGL is a cross-platform library for interfacing with programmable GPUs for the purpose of rendering real-time 3D graphics.
 
 这是OpenGL的定义，同时OpenGL在这么多年的发展过程中，有了很多变种，在手机上的OpenGL被称之为OpenGL ES，在网页端的OpenGL被称之为WebGL。
@@ -15,10 +13,6 @@ OpenGL is a cross-platform library for interfacing with programmable GPUs for th
 OpenGL自己有一套机制用于并行计算，也就是所谓的shader，底层不同品牌的硬件直接支持了OpenGL这套机制。
 
 OpenGL有不少工具包，其中比较常用的有：GLUT（提供跨平台的交互界面），GLEW（GL的扩展包）。
-
-很多文章上手就解释所谓的The Graphics Pipeline，我个人认为这是不好的，同时很难理解，因为压根不明白为什么要引入这个pipeline，为什么要有不同的shader。
-
-要读懂这套pipeline，首先要明白两件事情：1、计算机图形学原理；2、OpenGL的并行机制。
 
 ## 计算机图形学原理和OpenGL的并行机制
 
@@ -41,9 +35,3 @@ OpenGL有不少工具包，其中比较常用的有：GLUT（提供跨平台的�
 3、rasterization（光栅化）：将二维形状，转换为像素表示；
 
 4、fragment shader：输出最终渲染的图片数据；
-
-## Cinder
-
-我很不喜欢从0开始写OpenGL，因为有太多讨厌的宏，以及丑陋的编程方式。
-
-后来遇到了cinder，这个框架真的很棒，所以这个repository下的工作，也都是使用cinder来实现的。

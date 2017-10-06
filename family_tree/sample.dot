@@ -1,0 +1,18 @@
+digraph G 
+{
+	shannon [margin=0 shape=ellipse, style=bold, fillcolor=white, color=red, label=<<TABLE border="0" cellborder="0">
+                       <TR><TD width="60" height="50" fixedsize="true"><IMG SRC="img/shannon.jpg" scale="true"/></TD><td><font point-size="10">Claude Shannon<br />A Mathematical Theory of Communication</font></td></TR>
+              </TABLE>>];
+	sutherland [margin=0 shape=ellipse, style=bold, fillcolor=white, color=red, label=<<TABLE border="0" cellborder="0">
+                       <TR><TD width="60" height="50" fixedsize="true"><IMG SRC="img/sutherland.jpg" scale="true"/></TD><td><font point-size="10">Ivan Sutherland<br />Sketchpad</font></td></TR>
+              </TABLE>>];
+	kay [margin=0 shape=ellipse, style=bold, fillcolor=white, color=red, label=<<TABLE border="0" cellborder="0">
+                       <TR><TD width="60" height="50" fixedsize="true"><IMG SRC="img/kay.jpg" scale="true"/></TD><td><font point-size="10">Alan Kay<br />Smalltalk</font></td></TR>
+              </TABLE>>];
+    phong [margin=0 shape=ellipse, style=bold, fillcolor=white, color=red, label=<<TABLE border="0" cellborder="0">
+                       <TR><TD width="60" height="50" fixedsize="true"><IMG SRC="img/phong.jpg" scale="true"/></TD><td><font point-size="10">Bui Tuong Phong<br /> Phong Shading</font></td></TR>
+              </TABLE>>];       
+	shannon -> sutherland [style=bold, color=blue];
+	sutherland -> kay [style=bold, color=blue];
+	sutherland -> phong [style=bold, color=blue];
+}
